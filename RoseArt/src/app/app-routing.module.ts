@@ -4,9 +4,10 @@ import { MainComponent } from './+main/main.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SigninComponent } from "./+signin/signin.component";
+import { LandingScreenComponent } from './-main-content/landing-screen/landing-screen.component';
 
 const routes: Routes = [
-  { path: '', component: MainWindowComponent, pathMatch: 'full', canActivate: [AuthGuardService] },
+  { path: '', component: LandingScreenComponent, pathMatch: 'full', canActivate: [AuthGuardService] },
   { path: 'signin', component: SigninComponent },
   { path: '**', redirectTo: ''}
 ];

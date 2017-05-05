@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-directory',
@@ -10,13 +11,9 @@ export class DirectoryComponent implements OnInit {
    public options = [1, 2, 3, 4, 5, 6, 7];
    public showHallsMenu: boolean = false;
 
-  constructor() { }
+  constructor(router : Router) { }
 
   ngOnInit() {
-  }
-
-  launchDashboard() {
-    console.log("launched dashboard");
   }
 
   launchSculptures() {
