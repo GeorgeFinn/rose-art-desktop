@@ -7,7 +7,6 @@
 
 #main-content {
   margin: 0;
-  padding: 20px;
   /*background-color: #ddd;*/
   background-color: transparent;
 }
@@ -18,11 +17,11 @@
 
 #frame-board {
   margin: 50px;
-  background-color: #fff;
+  background-color: #fafafa;
 }
 
 #content-container {
-  background-color: #fff;
+  background-color: #eaeaea;
 }
 
 @keyframes enlarge {
