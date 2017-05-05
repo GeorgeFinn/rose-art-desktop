@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="667px" height="240px" viewBox="0 0 667 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>rose-art-toolbar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="normal" letter-spacing="20">
+        <g id="rose-art-toolbar">
+            <g transform="translate(11.000000, -3.000000)">
+                <text id="rose" font-family="Selima" font-size="200" fill="#B12828">
+                    <tspan x="0.1" y="184">ros</tspan>
+                    <tspan x="245.7" y="184">e</tspan>
+                </text>
+                <text id="art" font-family="Bristol" font-size="175" fill="#000000">
+                    <tspan x="323.381944" y="175">ar</tspan>
+                    <tspan x="536.631944" y="175" letter-spacing="13.6111116">t</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

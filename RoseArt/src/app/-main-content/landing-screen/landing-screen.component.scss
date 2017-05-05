@@ -3,18 +3,22 @@
     margin-bottom: 8px;
 
 
-    h4 {
+    h3 {
         margin: 0px 0px 6px 0px;
+        color: #D68D91;
     }
     #instructions {
         font-family: sans-serif;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 16px;
         padding-top: 10px;
     }
 }
-
+#rose-art-title {
+    width: 50%;
+}
 #map {
     height: 400px;
     width: 600px;
+    box-shadow: 0 2px 4px black;
 }
