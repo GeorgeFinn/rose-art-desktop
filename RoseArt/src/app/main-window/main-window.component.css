@@ -1,21 +1,15 @@
 .side-navs {
-    /*background-color : #FEAA00*/
-    z-index: 2;
+    background-color : #8F5858;
+    z-index: 1;
+    color: #ddd;
 }
 
-#left-section {
-  background-color: #C1D9F4;
-}
-
-#right-section {
-  background-color: #F66B6D;
-}
 
 #main-content {
   margin: 0;
   padding: 20px;
   /*background-color: #ddd;*/
-  background-color: #ddd;
+  background-color: transparent;
 }
 
 .nav-com {
@@ -24,4 +18,18 @@
 
 #frame-board {
   margin: 50px;
+  background-color: #fff;
+}
+
+#content-container {
+  background-color: #fff;
+}
+#content-container:hover app-directory {
+  
+}
+
+@keyframes enlarge {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.15); }
+    100% { transform: scale(1.05); }
 }

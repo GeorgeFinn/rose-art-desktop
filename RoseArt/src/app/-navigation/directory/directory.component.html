@@ -1,3 +1,7 @@
+<div (mouseenter)='triggerAnimation()' fxLayout="row">
+  <span fxFlex></span>
+  <md-icon [@wobble]="wobbleState" (@wobble.done)="reset()" id="close">keyboard_backspace</md-icon>
+</div>
 <md-list id="directory-list">
   <md-list-item routerLink="/">
     <md-icon md-list-icon>map</md-icon>
@@ -9,7 +13,7 @@
   </md-list-item>
   <md-list-item routerLink="/">
     <md-icon md-list-icon>location_city</md-icon>
-    <h4 md-line>Academic Halls</h4>
+    <h4 md-line>Buildings</h4>
   </md-list-item>
   <md-divider></md-divider>
   <md-list-item class="hall-button" routerLink="/">
@@ -27,6 +31,6 @@
   <md-divider></md-divider>
   <md-list-item (click)="launchAppScreen()">
     <md-icon md-list-icon>get_app</md-icon>
-    <h4 md-line>Download Mobile App</h4>
+    <h4 md-line>Mobile App</h4>
   </md-list-item>
 </md-list>

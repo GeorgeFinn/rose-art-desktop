@@ -1,0 +1,43 @@
+#top-bar {
+    background-color : #8F5858;
+    color: #ddd;
+    z-index: 1;
+    img {
+        padding:10px;
+        height: 50%;
+        width: auto;
+    }
+    img:hover {
+        animation: enlarge .3s forwards;
+        -webkit-animation: enlarge .3s forwards;
+        z-index:8;
+        cursor:pointer;
+    }
+    #signoutButton {
+        background-color: transparent;
+        margin-right:20px;
+        md-icon {
+            font-size: 35px;
+        }
+    }
+    #signoutButton:hover {
+        cursor:pointer;
+    }
+    #signoutButton:hover md-icon{
+        animation: enlarge .3s forwards;
+        -webkit-animation: enlarge .3s forwards;
+        z-index:8;
+    }
+
+    
+}
+
+a {
+    cursor: pointer;
+}
+
+@keyframes enlarge {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}

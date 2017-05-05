@@ -1,11 +1,69 @@
 .hall-button {
     margin-left: 50px;
 }
-
+#close {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
+#directory-list {
+    text-align: center;
+}
 md-list-item:hover {
-    background-color: orange;
+    background-color: #814242;
+    color: #CBCACB;
+}
+md-list-item:hover h4  {
+    animation: enlarge .6s forwards;
+    -webkit-animation: enlarge .6s forwards;
+    z-index:8;
 }
 
 md-list-item {
     cursor: pointer;
 }
+
+@keyframes wobble {
+  from {
+    transform: none;
+  }
+ 
+  15% {
+    transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+ 
+  30% {
+    transform: translate3d(15%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+ 
+  45% {
+    transform: translate3d(-10%, 0, 0) rotate3d(0, 0, 1, -2deg);
+  }
+ 
+  60% {
+    transform: translate3d(5%, 0, 0) rotate3d(0, 0, 1, 1deg);
+  }
+ 
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+ 
+  to {
+    transform: none;
+  }
+}
+ 
+.wobble {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+}
+
+@keyframes enlarge {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(1.2); }
+    100% { transform: scaleX(1); }
+}
+
