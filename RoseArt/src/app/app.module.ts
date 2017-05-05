@@ -3,7 +3,7 @@ import { SculpturesComponent } from './-main-content/sculptures/sculptures.compo
 import { TopBarComponent } from './-bars/top-bar/top-bar.component';
 import { BottomBarComponent } from './-bars/bottom-bar/bottom-bar.component';
 import { ProfileFeedComponent } from './-main-content/profile/profile-feed/profile-feed.component';
-import { SculptureCompComponent } from './-main-content/sculpture-comp/sculpture-comp.component';
+import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
 import { PhotoCardComponent } from './photo-card/photo-card.component';
 import { LeftBurgerComponent } from './-navigation/left-burger/left-burger.component';
 import { DirectoryComponent } from './-navigation/directory/directory.component';
@@ -29,15 +29,15 @@ import {MaterialModule} from '@angular/material';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
-import { MainComponent } from './+main/main.component';
 import { SigninComponent } from './+signin/signin.component';
 import * as firebase from 'firebase/app';
+import { AboutComponent } from './+about/about.component';
+import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     SigninComponent,
     MainWindowComponent,
     BottomBarComponent,
@@ -53,7 +53,9 @@ import * as firebase from 'firebase/app';
     LeftBurgerComponent,
     ProfileComponent,
     PhotoCardComponent,
-    SculptureCompComponent,
+    ArtDetailComponent,
+    AboutComponent,
+    MobileInfoComponent,
   ],
   imports: [
     BrowserModule,

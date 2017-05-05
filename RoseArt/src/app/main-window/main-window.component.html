@@ -6,7 +6,7 @@
       <app-left-burger *ngIf="!showDirectory"></app-left-burger>
     </md-sidenav>
     <div id="main-content">
-       <ng-content></ng-content>
+       <router-outlet></router-outlet>
       <!--<app-landing-screen *ngIf="showLanding" fxFlexFill></app-landing-screen>
       <app-sculptures *ngIf="showSculptures"></app-sculptures>
       <app-hall-comp *ngIf="!showLanding && !showProfile" fxFlexFill></app-hall-comp>
