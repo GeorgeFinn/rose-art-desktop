@@ -1,0 +1,27 @@
+.side-navs {
+    /*background-color : #FEAA00*/
+    z-index: 2;
+}
+
+#left-section {
+  background-color: #C1D9F4;
+}
+
+#right-section {
+  background-color: #F66B6D;
+}
+
+#main-content {
+  margin: 0;
+  padding: 20px;
+  /*background-color: #ddd;*/
+  background-color: #ddd;
+}
+
+.nav-com {
+  cursor: pointer;
+}
+
+#frame-board {
+  margin: 50px;
+}

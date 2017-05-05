@@ -1,0 +1,19 @@
+<div id="frame-board" fxLayout="column">
+  <app-top-bar></app-top-bar>
+  <md-sidenav-container id="content-container">
+    <md-sidenav id="left-section" class="side-navs" (click)="toggleLeft()" fxLayoutAlign="center center" mode="side" opened="true" align="start">
+      <app-directory *ngIf="showDirectory"></app-directory>
+      <app-left-burger *ngIf="!showDirectory"></app-left-burger>
+    </md-sidenav>
+    <div id="main-content">
+      <app-landing-screen *ngIf="showLanding" fxFlexFill></app-landing-screen>
+      <app-sculptures *ngIf="showSculptures"></app-sculptures>
+      <app-hall-comp *ngIf="!showLanding && !showProfile" fxFlexFill></app-hall-comp>
+      <app-profile *ngIf="showProfile"></app-profile>
+    </div>
+    <md-sidenav id="right-section" (click)="toggleRight()" class="side-navs" fxLayoutAlign="center center" mode="side" [opened]="showRight()" align="end">
+      <app-profile-fab *ngIf="!showDirectory"></app-profile-fab>
+    </md-sidenav>
+  </md-sidenav-container>
+  <app-bottom-bar></app-bottom-bar>
+</div>

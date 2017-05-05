@@ -1,0 +1,11 @@
+.hall-button {
+    margin-left: 50px;
+}
+
+md-list-item:hover {
+    background-color: orange;
+}
+
+md-list-item {
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+#top-bar {
+    background-color : #FD442B;
+    z-index: 8;
+    /*background-color : rgb(250,40,75);*/
+}
+
+a {
+    cursor: pointer;
+}

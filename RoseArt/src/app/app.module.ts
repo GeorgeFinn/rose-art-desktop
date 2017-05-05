@@ -1,3 +1,17 @@
+import { ProfileFabComponent } from './-navigation/profile-fab/profile-fab.component';
+import { SculpturesComponent } from './-main-content/sculptures/sculptures.component';
+import { TopBarComponent } from './-bars/top-bar/top-bar.component';
+import { BottomBarComponent } from './-bars/bottom-bar/bottom-bar.component';
+import { ProfileFeedComponent } from './-main-content/profile/profile-feed/profile-feed.component';
+import { SculptureCompComponent } from './-main-content/sculpture-comp/sculpture-comp.component';
+import { PhotoCardComponent } from './photo-card/photo-card.component';
+import { LeftBurgerComponent } from './-navigation/left-burger/left-burger.component';
+import { DirectoryComponent } from './-navigation/directory/directory.component';
+import { SculptureCardComponent } from './-main-content/sculptures/sculpture-card/sculpture-card.component';
+import { ProfileComponent } from './-main-content/profile/profile.component';
+import { HallCompComponent } from './-main-content/hall-comp/hall-comp.component';
+import { LandingScreenComponent } from './-main-content/landing-screen/landing-screen.component';
+import { MainWindowComponent } from './main-window/main-window.component';
 import { AuthGuardService } from './services/auth-guard.service';
 import { AuthService } from './services/auth.service';
 import { environment } from './../environments/environment.prod';
@@ -24,7 +38,22 @@ import * as firebase from 'firebase/app';
   declarations: [
     AppComponent,
     MainComponent,
-    SigninComponent
+    SigninComponent,
+    MainWindowComponent,
+    BottomBarComponent,
+    TopBarComponent,
+    LandingScreenComponent,
+    HallCompComponent,
+    ProfileFabComponent,
+    ProfileComponent,
+    ProfileFeedComponent,
+    SculpturesComponent,
+    SculptureCardComponent,
+    DirectoryComponent,
+    LeftBurgerComponent,
+    ProfileComponent,
+    PhotoCardComponent,
+    SculptureCompComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+md-icon {
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#profile-container {
+    padding: 15px;
+}
