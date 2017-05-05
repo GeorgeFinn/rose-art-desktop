@@ -10,6 +10,7 @@ export class MainWindowComponent implements OnInit {
   public showLanding: boolean = true;
   public showProfile: boolean = false;
   public showDirectory: boolean = false;
+  public content = "landing";
 
   constructor() { }
 
