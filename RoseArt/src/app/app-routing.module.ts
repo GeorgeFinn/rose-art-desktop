@@ -14,7 +14,7 @@ import { LandingScreenComponent } from './-main-content/landing-screen/landing-s
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main/landing',
+    redirectTo: 'main/',
     pathMatch: 'full'
   },
   {
@@ -59,12 +59,12 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
-    // canActivate: [AuthGuardService],
+    canActivate: [AuthGuardService],
   },
   {
     path: 'mobile',
     component: MobileInfoComponent,
-    // canActivate: [AuthGuardService],
+    canActivate: [AuthGuardService],
   },
   {
     path: '**',
