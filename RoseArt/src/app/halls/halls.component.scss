@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    background: #efefef;
+}
+
+.thumbnails {
+    flex-grow: 1;
+    align-self: stretch;
+    position: relative;
+    
+}
+.thumnails:hover .building {
+    animation: show-details .5s forwards;
+    -webkit-animation: show-details .5s forwards;
+}
+
+.thumbnails:hover {
+    animation: enlarge .3s forwards;
+    -webkit-animation: enlarge .3s forwards;
+    z-index:8;
+}
+
+.thumbnails img {
+    max-width: 100%;
+    width: 100%;
+}
+.thumbnails a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 0;
+}
+
+.building {
+    position: absolute;
+    background: #000;
+    width: 100%;
+    bottom: 0;
+    opacity: 1;
+}
+
+.building p {
+    font-size: 11px !important;
+    text-align: center;
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: #ddd;
+}
+
+@keyframes show-details {
+    0% { opacity: 0; bottom: -20px; }
+    100% { opacity: 1; bottom: 10px; }
+}
+
+@keyframes enlarge {
+    0% { transform: scale(1); }
+    40% { transform: scale(1.15); }
+    100% { transform: scale(1.05); }
+}
+//MEDIUM
+@media only screen and (max-width: 40em) {
+    .thumbnails {
+        width: 50%;
+    }
+}
+//LARGE
+@media only screen and (min-width: 40em) and (max-width: 64.063em) {
+    .thumbnails {
+        width: 50%;
+        max-width: 50%;
+    }
+}
