@@ -1,16 +1,7 @@
-.container {
-    background-color: pink;
+.thumbnails {
+    height: 100%;
 }
-
-.building {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    z-index : 10;
-    color: black;
-    background-color: pink;
-}
-.thumnails:hover .building {
+.thumbnails:hover .building {
     animation: show-details .5s forwards;
     -webkit-animation: show-details .5s forwards;
 }

@@ -1,21 +1,7 @@
-<div fxLayout="column" class="container">
-  <md-grid-list fxLayout="row" cols="4">
-    <md-grid-tile>
-        <a routerLink="" fxLayout="column">
-          <div class="building">
-            <p>Myers</p>
-          </div>
-          <img src="../../assets/images/meonch-thumbnail.png" alt="Myers">
-        </a>
-    </md-grid-tile>
-    <md-grid-tile>
+<div fxLayout="row">
+  <div class="thumbnails" fxLayout="column" fxFlex *ngFor="let name of names">
+    <img fxFlex src="../../assets/images/{{name}}-thumbnail2.png" alt="name">
 
-    </md-grid-tile>
-    <md-grid-tile>
-
-    </md-grid-tile>
-    <md-grid-tile>
-
-    </md-grid-tile>
-  </md-grid-list>
+  </div>
 </div>
+
