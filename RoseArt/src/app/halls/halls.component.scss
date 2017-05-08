@@ -1,16 +1,14 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    background: #efefef;
+    background-color: pink;
 }
 
-.thumbnails {
-    flex-grow: 1;
-    align-self: stretch;
-    position: relative;
-    
+.building {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    z-index : 10;
+    color: black;
+    background-color: pink;
 }
 .thumnails:hover .building {
     animation: show-details .5s forwards;
@@ -23,36 +21,9 @@
     z-index:8;
 }
 
-.thumbnails img {
-    max-width: 100%;
-    width: 100%;
-}
-.thumbnails a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    font-size: 0;
-}
-
-.building {
-    position: absolute;
-    background: #000;
-    width: 100%;
-    bottom: 0;
-    opacity: 1;
-}
-
-.building p {
-    font-size: 11px !important;
-    text-align: center;
-    margin: 1em 0;
-    text-transform: uppercase;
-    color: #ddd;
-}
-
 @keyframes show-details {
-    0% { opacity: 0; bottom: -20px; }
-    100% { opacity: 1; bottom: 10px; }
+    0% { opacity: 0; bottom: 0px; }
+    100% { opacity: 1; bottom: 30px; }
 }
 
 @keyframes enlarge {
