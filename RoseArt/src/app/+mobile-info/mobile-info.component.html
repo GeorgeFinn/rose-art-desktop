@@ -1,10 +1,15 @@
-<div id="mobile-container">
-  <img>
-  <div id="side-desc">
-    <button></button>
-    <h2>Download Our Mobile App</h2>
-    <h4>Available for IOS and Android</h4>
-    <button md-button><md-icon></md-icon>android</button>
-    <button md-button><md-icon></md-icon></button>
+<div id="mobile-container" fxLayout="row">
+  <img fxFlex src="../../assets/images/flame-mockup.PNG" alt="screen-mock-ups">
+  <div fxFlex fxLayout="column">
+    <a [routerLink]="['/main','landing']" routerLinkActive="active"><md-icon>arrow_back</md-icon><span>Back to Home Page</span></a>
+    <div id="side-desc" fxFlex fxLayout="column" fxLayoutAlign="start center">
+      <h2>Download Our Mobile App</h2>
+      <h4>Available for IOS and Android</h4>
+      <div id="buttons" fxLayout="row">
+        <button md-button><md-icon>android</md-icon></button>
+        <span fxFlex>or</span>
+        <button md-button><md-icon>android</md-icon></button>
+      </div>
+    </div>
   </div>
 </div>

@@ -16,21 +16,17 @@
     }
     #signoutButton {
         background-color: transparent;
-        margin-right:20px;
-        md-icon {
-            font-size: 35px;
-        }
-    }
-    #signoutButton:hover {
+        margin-right: 2px;
         cursor:pointer;
+        md-icon {
+            font-size: 20pt;
+        }
     }
     #signoutButton:hover md-icon{
         animation: enlargeX2 .3s forwards;
         -webkit-animation: enlargeX2 .3s forwards;
         z-index:8;
     }
-
-    
 }
 
 a {
