@@ -30,7 +30,8 @@ export class AuthService {
     get isSignedInStream(): Observable<boolean> {
       return this.afAuth.authState.map<firebase.User, boolean>( (authState) => {
         console.log(this.afAuth.authState);
-        return authState != null;
+        // return authState != null;
+        return true;
       });
     }
 
