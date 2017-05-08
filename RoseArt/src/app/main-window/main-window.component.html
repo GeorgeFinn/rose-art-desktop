@@ -12,7 +12,7 @@
       <app-hall-comp *ngIf="!showLanding && !showProfile" fxFlexFill></app-hall-comp>
       <app-profile *ngIf="showProfile"></app-profile>-->
     </div>
-    <md-sidenav id="right-section" (click)="toggleRight()" class="side-navs" fxLayoutAlign="center center" mode="side" [opened]="showRight()" align="end">
+    <md-sidenav id="right-section" (click)="toggleRight()" class="side-navs" fxLayoutAlign="center center" mode="side" opened="true" align="end">
       <app-profile-fab *ngIf="!showDirectory"></app-profile-fab>
     </md-sidenav>
   </md-sidenav-container>
