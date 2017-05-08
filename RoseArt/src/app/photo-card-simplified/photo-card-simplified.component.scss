@@ -1,16 +1,28 @@
 #feed-card {
     margin: 10px;
-    
-    padding: 20px;
-    background-color: #5D1C1C;
     color: white;
     font-family: 'Lucida Grande';
     text-align: left;
+    box-shadow: 0px 2px 3px #888888;
+    background-position: center;
     img {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
     }
+}
+
+#feed-card:hover {
+    cursor:pointer;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 30px 80px;
 }
 
 .card-title {
@@ -21,9 +33,4 @@
 .card-subtitle {
     font-size: 15px;
     font-weight: normal;
-    padding-bottom: 15px;
-}
-
-#footer {
-    padding: 10px 20px;
 }
