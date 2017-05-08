@@ -5,6 +5,6 @@
     <h4>Click to enlarge</h4>
   </div>
   <div id="sculptures-list" fxLayout="row">
-    <app-photo-card *ngFor="let sculptures of sculptures"></app-photo-card>
+    <app-photo-card [imageUrl]="url" [title]="title" [author]="author" *ngFor="let sculptures of sculptures"></app-photo-card>
   </div>
 </div>

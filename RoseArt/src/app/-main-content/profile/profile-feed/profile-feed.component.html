@@ -1,3 +1,3 @@
 <div id="feed-list" fxLayout="row">
-  <app-photo-card *ngFor="let post of feed"></app-photo-card>
+  <app-photo-card [imageUrl]="url" [title]="title" [author]="author" *ngFor="let post of feed"></app-photo-card>
 </div>
