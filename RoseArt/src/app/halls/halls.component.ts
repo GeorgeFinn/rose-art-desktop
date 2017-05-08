@@ -12,5 +12,6 @@ export class HallsComponent implements OnInit {
 
   ngOnInit() {
   }
+  
 
 }

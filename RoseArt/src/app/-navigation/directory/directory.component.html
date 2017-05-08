@@ -1,6 +1,6 @@
 <div (mouseenter)='triggerAnimation()' fxLayout="row">
   <span fxFlex></span>
-  <md-icon [@wobble]="wobbleState" (@wobble.done)="reset()" id="close">keyboard_backspace</md-icon>
+  <md-icon [@wobble]="wobbleState" (@wobble.done)="reset()" id="close">close</md-icon>
 </div>
 <md-list id="directory-list">
   <md-list-item [routerLink]="['/main','landing']" routerLinkActive="active">

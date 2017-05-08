@@ -1,25 +1,20 @@
+
+
 .thumbnails {
     height: 100%;
-}
-.thumbnails:hover .building {
-    animation: show-details .5s forwards;
-    -webkit-animation: show-details .5s forwards;
+    background-color: #800000;
 }
 
 .thumbnails:hover {
-    animation: enlarge .3s forwards;
-    -webkit-animation: enlarge .3s forwards;
+    animation: woop .3s forwards;
+    -webkit-animation: woop .3s forwards;
     z-index:8;
+    cursor:pointer;
 }
 
-@keyframes show-details {
-    0% { opacity: 0; bottom: 0px; }
-    100% { opacity: 1; bottom: 30px; }
-}
-
-@keyframes enlarge {
+@keyframes woop {
     0% { transform: scale(1); }
-    40% { transform: scale(1.15); }
+    40% { transform: scale(1.10); }
     100% { transform: scale(1.05); }
 }
 //MEDIUM

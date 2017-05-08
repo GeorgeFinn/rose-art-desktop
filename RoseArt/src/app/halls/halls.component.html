@@ -1,7 +1,7 @@
 <div fxLayout="row">
-  <div class="thumbnails" fxLayout="column" fxFlex *ngFor="let name of names">
+  <div class="thumbnails" fxLayout="column" fxFlex *ngFor="let name of names"
+    [routerLink]="['/main/hall', name]" routerLinkActive="active">
     <img fxFlex src="../../assets/images/{{name}}-thumbnail2.png" alt="name">
-
   </div>
 </div>
 
