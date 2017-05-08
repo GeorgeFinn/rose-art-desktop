@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'art-detail',
@@ -6,6 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./art-detail.component.css']
 })
 export class ArtDetailComponent implements OnInit {
+
+  @Input() title: string;
+  @Input() author: string;
+  @Input() imageUrl: string;
 
   constructor() { }
 
