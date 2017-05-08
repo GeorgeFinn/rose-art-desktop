@@ -1,7 +1,17 @@
 <div id="profile-container" fxLayout="column" fxLayoutAlign="center center">
-  <md-icon>account_circle</md-icon>
-  <div>
-    <h4>Anthony De Rada</h4>
+  
+  <div fxFlexFill fxLayout="row" id="userinfo">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <div id="fullname">Anthony De Rada</div>
+      <div id="username">deradaam</div>
+    </div>
+    <span fxFlex></span>
   </div>
-  <app-profile-feed></app-profile-feed>
+  <div fxFlexFill fxLayout="row">
+    <div fxLayout="column">
+      <app-profile-feed></app-profile-feed>
+    </div>
+    <span fxFlex></span>
+  </div>
+  
 </div>

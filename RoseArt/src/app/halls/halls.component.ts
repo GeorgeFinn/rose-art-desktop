@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./halls.component.scss']
 })
 export class HallsComponent implements OnInit {
-   names: string[] = ["myers", "moench", "olin", "crapo"];
+   names: string[] = ["olin", "myers", "moench", "crapo"];
 
   constructor() { }
 
