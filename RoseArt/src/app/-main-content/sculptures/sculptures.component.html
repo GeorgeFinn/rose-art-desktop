@@ -1,3 +1,10 @@
-<p>
-  sculptures works!
-</p>
+<div id="sculptures-container" fxLayout="column" fxLayoutAlign="center center">
+  <div id="sculptures-title" fxLayout="column" fxLayoutAlign="center center">
+    <md-icon>toys</md-icon>
+    <h2>These are the sculptures around campus</h2>
+    <h4>Click to enlarge</h4>
+  </div>
+  <div id="sculptures-list" fxLayout="row">
+    <app-photo-card *ngFor="let sculptures of sculptures"></app-photo-card>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+md-icon {
+    width: 50px;
+    height: auto;
+    font-size: 50px;
+}
+
+#sculptures-container {
+    padding: 15px;
+
+    h2 {
+        margin: 6px 0px;
+    }
+    h4 {
+        margin: 4px 0px;
+    }
+    app-photo-card {
+        cursor: pointer;
+    }
+}

@@ -1,7 +1,7 @@
 md-icon {
+    width: 50px;
+    height: auto;
     font-size: 50px;
-    cursor: pointer;
-    margin-bottom: 10px;
 }
 
 #profile-container {
