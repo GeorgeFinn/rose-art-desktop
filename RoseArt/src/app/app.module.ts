@@ -33,6 +33,7 @@ import { SigninComponent } from './+signin/signin.component';
 import * as firebase from 'firebase/app';
 import { AboutComponent } from './+about/about.component';
 import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
+import { HallsComponent } from './halls/halls.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
     ArtDetailComponent,
     AboutComponent,
     MobileInfoComponent,
+    HallsComponent,
   ],
   imports: [
     BrowserModule,

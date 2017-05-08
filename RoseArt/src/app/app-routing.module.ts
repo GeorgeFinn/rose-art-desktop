@@ -1,3 +1,4 @@
+import { HallsComponent } from './halls/halls.component';
 import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
 import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
@@ -14,15 +15,16 @@ import { LandingScreenComponent } from './-main-content/landing-screen/landing-s
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main/',
+    redirectTo: 'main',
     pathMatch: 'full'
   },
   {
-    path: 'main/:content',
+    path: 'main',
     component: MainWindowComponent,
     canActivate: [AuthGuardService],
     children: [
-      { path: '',
+      {
+        path: '',
         redirectTo: 'landing',
         pathMatch: 'full'
       },
@@ -36,7 +38,7 @@ export const routes: Routes = [
       },
       {
         path: 'halls',
-        component: HallCompComponent
+        component: HallsComponent
       },
       {
         path: 'hall/:name',
