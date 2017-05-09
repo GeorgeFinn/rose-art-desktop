@@ -1,3 +1,9 @@
+import { SlideShowImageComponent } from './slide-show/slide-show-image/slide-show-image.component';
+import { SlideShowPreviewComponent } from './slide-show/slide-show-preview/slide-show-preview.component';
+import { SlideShowPreviewsComponent } from './slide-show/slide-show-previews/slide-show-previews.component';
+import { SlideShowImagesComponent } from './slide-show/slide-show-images/slide-show-images.component';
+import { SlideShowControlComponent } from './slide-show/slide-show-control/slide-show-control.component';
+import { SlideShowComponent } from './slide-show/slide-show.component';
 import { ProfileFabComponent } from './-navigation/profile-fab/profile-fab.component';
 import { SculpturesComponent } from './-main-content/sculptures/sculptures.component';
 import { TopBarComponent } from './-bars/top-bar/top-bar.component';
@@ -62,6 +68,12 @@ import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card
     MobileInfoComponent,
     HallsComponent,
     PhotoCardSimplifiedComponent,
+     SlideShowComponent,
+    SlideShowControlComponent,
+    SlideShowImagesComponent,
+    SlideShowPreviewsComponent,
+    SlideShowPreviewComponent,
+    SlideShowImageComponent,
   ],
   imports: [
     NgbModule.forRoot(),

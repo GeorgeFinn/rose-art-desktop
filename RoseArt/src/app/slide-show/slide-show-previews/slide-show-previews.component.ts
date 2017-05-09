@@ -8,7 +8,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class SlideShowPreviewsComponent {
 
     @Input() current;
-    @Input() pics;
+    @Input() gallery;
     @Output() changed = new EventEmitter();
     constructor (){
         // If you want to add items to the list upon construction of the child,

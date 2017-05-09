@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SlideShowImageComponent implements OnInit {
 
-   @Input() public pic;
+   @Input() public art;
     constructor(){
     }
     ngOnInit (){

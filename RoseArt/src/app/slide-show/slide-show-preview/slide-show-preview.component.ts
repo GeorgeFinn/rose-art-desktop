@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SlideShowPreviewComponent {
 
-  @Input() public pic;
+  @Input() public art;
   constructor(){
   }
   ngAfterViewInit(){

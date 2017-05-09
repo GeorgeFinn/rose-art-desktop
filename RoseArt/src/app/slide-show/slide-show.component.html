@@ -1,5 +1,5 @@
 <div id="slideshow">
-    <!--<slide-show-control class="control" (changed)="setCurrent($event)" [maximum]="pics.length" [current]="current"></slide-show-control>-->
-    <slide-show-images id="main-pic" [pics]="pics" [current]="current"></slide-show-images>
-    <slide-show-previews (changed)="setCurrent($event)" [pics]="pics" [current]="current"></slide-show-previews>
+    <!--<slide-show-control class="control" (changed)="setCurrent($event)" [maximum]="gallery.length" [current]="current"></slide-show-control>-->
+    <slide-show-images id="main-pic" [gallery]="gallery" [current]="current"></slide-show-images>
+    <slide-show-previews (changed)="setCurrent($event)" [gallery]="gallery" [current]="current"></slide-show-previews>
 <div>
