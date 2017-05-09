@@ -1,7 +1,7 @@
-<div fxLayout="row" class="album">
+<div fxLayout="column" class="album">
     <span fxFlex></span>
     <div *ngFor="let art of gallery; let i = index" class="preview" [ngClass]="{active : isCurrent(i)}" (click)="resetCurrent(i)">
-        <slide-show-preview [art]="art"></slide-show-preview>
+        <slide-show-preview fxFlex [art]="art"></slide-show-preview>
     </div>
     <span fxFlex></span>
 </div>

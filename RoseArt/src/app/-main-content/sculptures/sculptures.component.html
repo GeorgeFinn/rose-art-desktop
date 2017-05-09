@@ -1,9 +1,3 @@
-<div id="sculptures-container" fxLayout="column">
-  <div id="sculptures-title" fxLayout="column" fxLayoutAlign="center center">
-    <!--<img src="../../assets/images/sculptures-title.png">
-    <br>-->
-  </div>
-  <div id="sculptures-list" fxLayout="column">
-    <app-sculpture-card [imageUrl]="url" [title]="title" [author]="author" *ngFor="let sculptures of sculptures"></app-sculpture-card>
-  </div>
+<div id="sculptures-container">
+  <slide-show></slide-show>
 </div>

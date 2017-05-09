@@ -1,10 +1,10 @@
- <div fxFlexFill fxLayoutAlign="start none" fxLayout="row" class="detail">
-    <img class="sculpt" src="../../assets/images/self-made-man-detail.png">
+ <div fxLayoutAlign="start none" fxLayout="row" class="detail">
+    <img class="sculpt" src='{{art.url}}'>
     <div fxFlex fxLayout="column">
       <div fxLayout="row" id="userinfo">
         <div fxLayout="column">
-          <span class="fullname">Self Made Man</span>
-          <span class="subtitle">Bobbie Carlyle</span>
+          <span class="fullname">{{art?.title}}</span>
+          <span class="subtitle">{{art?.author}}</span>
         </div>
         <span fxFlex></span>
         <div fxLayout="column">

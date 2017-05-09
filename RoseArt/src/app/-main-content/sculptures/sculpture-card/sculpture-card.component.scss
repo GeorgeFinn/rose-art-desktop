@@ -1,6 +1,8 @@
 .sculpt {
     z-index: 3;
     box-shadow: 2px 1px 6px #7F7F7F;
+    max-width: 40%;
+    max-height: auto;
 }   
 
 #userinfo {
@@ -24,8 +26,4 @@
 .subtitle {
     font-size: 13pt;
     color: #800000;
-}
-
-.detail {
-
 }

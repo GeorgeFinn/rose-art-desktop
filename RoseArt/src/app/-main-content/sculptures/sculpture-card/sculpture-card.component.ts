@@ -1,3 +1,4 @@
+import { Art } from './../../../art.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -6,11 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./sculpture-card.component.scss']
 })
 export class SculptureCardComponent implements OnInit {
-  @Input() title: string;
-  @Input() author: string;
-  @Input() imageUrl: string;
+  @Input() art: Art;
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }
