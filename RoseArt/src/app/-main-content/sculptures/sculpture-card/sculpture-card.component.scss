@@ -1,8 +1,13 @@
 .sculpt {
     z-index: 3;
     box-shadow: 2px 1px 6px #7F7F7F;
-    max-width: 40%;
+    max-width: 35%;
     max-height: auto;
+    align-content: center;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }   
 
 #userinfo {
