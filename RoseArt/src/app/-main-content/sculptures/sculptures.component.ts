@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbCarouselConfig } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
   selector: 'app-sculptures',
   templateUrl: './sculptures.component.html',
-  styleUrls: ['./sculptures.component.scss']
+  providers: [NgbCarouselConfig]
 })
 export class SculpturesComponent implements OnInit {
 
@@ -12,7 +13,11 @@ export class SculpturesComponent implements OnInit {
   public title = "Flame of Milenium";
   public author = "Leonardo Nierman";
 
-  constructor() { }
+  constructor(config: NgbCarouselConfig) {
+    config.interval = 100000;
+    config.wrap = false;
+    config.keyboard = true;
+   }
 
   ngOnInit() {
   }

@@ -1,0 +1,7 @@
+<div fxLayout="row" class="album">
+    <span fxFlex></span>
+    <div *ngFor="let pic of pics; let i = index" class="preview" [ngClass]="{active : isCurrent(i)}" (click)="resetCurrent(i)">
+        <slide-show-preview [pic]="pic"></slide-show-preview>
+    </div>
+    <span fxFlex></span>
+</div>

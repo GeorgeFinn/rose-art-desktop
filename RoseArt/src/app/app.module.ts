@@ -29,6 +29,8 @@ import {MaterialModule} from '@angular/material';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 import { SigninComponent } from './+signin/signin.component';
 import * as firebase from 'firebase/app';
 import { AboutComponent } from './+about/about.component';
@@ -62,6 +64,7 @@ import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card
     PhotoCardSimplifiedComponent,
   ],
   imports: [
+    NgbModule.forRoot(),
     BrowserModule,
     FormsModule,
     HttpModule,
