@@ -1,5 +1,5 @@
 <div id="slideshow" fxLayout="row">
     <!--<slide-show-control class="control" (changed)="setCurrent($event)" [maximum]="gallery.length" [current]="current"></slide-show-control>-->
     <slide-show-cards fxFlex [gallery]="artPieces" [current]="current" [folder]="folder" [numItems]="numItems"></slide-show-cards>
-    <slide-show-previews (changed)="setCurrent($event)" [gallery]="artPieces" [current]="current"></slide-show-previews>
+    <slide-show-previews *ngIf="previews" (changed)="setCurrent($event)" [gallery]="artPieces" [current]="current"></slide-show-previews>
 <div>

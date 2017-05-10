@@ -1,0 +1,19 @@
+.sculpt {
+    z-index: 3;
+    box-shadow: 2px 1px 6px #7F7F7F;
+    max-width: auto;
+    max-height: 480px;
+}
+.banner {
+    z-index: 1;
+    margin-top: -1px;
+}
+.fullname {
+    font-size: 17pt;
+    color: black;
+    font-weight: 500;
+}
+.subtitle {
+    font-size: 13pt;
+    color: #800000;
+}

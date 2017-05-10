@@ -9,7 +9,6 @@ import { TopBarComponent } from './-bars/top-bar/top-bar.component';
 import { BottomBarComponent } from './-bars/bottom-bar/bottom-bar.component';
 import { ProfileFeedComponent } from './-main-content/profile/profile-feed/profile-feed.component';
 import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
-import { PhotoCardComponent } from './photo-card/photo-card.component';
 import { LeftBurgerComponent } from './-navigation/left-burger/left-burger.component';
 import { DirectoryComponent } from './-navigation/directory/directory.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
@@ -39,7 +38,9 @@ import * as firebase from 'firebase/app';
 import { AboutComponent } from './+about/about.component';
 import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
 import { HallsComponent } from './halls/halls.component';
-import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card-simplified.component';
+import { PhotoCardComponent } from "app/-main-content/profile/profile-cards/photo-card/photo-card.component";
+import { PhotoCardSimplifiedComponent } from "app/-main-content/profile/profile-feed/photo-card-simplified/photo-card-simplified.component";
+import { ProfileCardsComponent } from "app/-main-content/profile/profile-cards/profile-cards.component";
 
 
 @NgModule({
@@ -65,10 +66,11 @@ import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card
     MobileInfoComponent,
     HallsComponent,
     PhotoCardSimplifiedComponent,
-     SlideShowComponent,
+    SlideShowComponent,
     SlideShowCardsComponent,
     SlideShowPreviewsComponent,
     SlideShowPreviewComponent,
+    ProfileCardsComponent,
   ],
   imports: [
     BrowserModule,

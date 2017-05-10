@@ -8,6 +8,7 @@ import { Art } from "app/art.model";
 })
 export class SlideShowComponent implements OnInit, OnDestroy {
 
+    @Input() previews: boolean = true;
     @Input() folder: string = "";
     @Input() artPieces: Array<Art> = [];
     public current: number = 1;

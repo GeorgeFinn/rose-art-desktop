@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Art } from './../../../art.model';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-profile-feed',
@@ -7,13 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileFeedComponent implements OnInit {
 
-  public feed = [1, 2, 3, 4];
-  public url = "https://s-media-cache-ak0.pinimg.com/736x/f1/93/23/f19323b62698092e83ce456408ca0dc1.jpg";
-  public title = "Self Made Man";
-  public author = "Bobbie Carlyle";
-
+  @Input() public feed: Array<Art> = [];
+  @Input() current;
+  @Output() changed = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
+  }
+
+  isCurrent (_ind){
+      return parseInt(this.current) === parseInt(_ind+1);
+  }
+  resetCurrent (_ind) {
+      this.current = parseInt(_ind+1);
+      this.changed.emit(this.current);
   }
 }

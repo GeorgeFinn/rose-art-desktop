@@ -1,17 +1,19 @@
+import { Art } from './../../../../art.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-photo-card',
+  selector: 'photo-card',
   templateUrl: './photo-card.component.html',
   styleUrls: ['./photo-card.component.scss']
 })
 export class PhotoCardComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() author: string;
-  @Input() imageUrl: string;
+ @Input() art: Art;
+  @Input() folder: string;
+  @Input() index: number;
+  @Input() numItems: number;
   
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

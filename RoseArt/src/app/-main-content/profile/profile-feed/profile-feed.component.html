@@ -1,3 +1,7 @@
-<div id="feed-list" fxLayout="column">
-    <app-photo-card-simplified fxFlex [imageUrl]="url" [title]="title" [author]="author" *ngFor="let post of feed"></app-photo-card-simplified>
+<div fxLayout="column" class="album">
+    <span fxFlex></span>
+    <div id="feed-list" fxLayout="column" *ngFor="let art of feed; let i = index" class="preview" [ngClass]="{active : isCurrent(i)}" (click)="resetCurrent(i)">
+        <app-photo-card-simplified [imageUrl]="art.url" [title]="art.title" [author]="art.author"></app-photo-card-simplified>
+    </div>
+    <span fxFlex></span>
 </div>

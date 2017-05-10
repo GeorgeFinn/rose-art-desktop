@@ -1,17 +1,19 @@
-<div id="profile-container" fxLayout="column" fxLayoutAlign="center center">
-  
-  <div fxFlexFill fxLayout="row" id="userinfo">
+<div id="profile-container" fxLayout="column">
+
+  <div fxLayout="row" id="userinfo">
     <div fxLayout="column" fxLayoutAlign="center center">
-      <div class="fullname">George Finn</div>
+      <div class="fullname">Username</div>
       <div class="username">finngw</div>
     </div>
     <span fxFlex></span>
-  </div>
-  <div fxFlexFill fxLayout="row">
     <div fxLayout="column">
-      <app-profile-feed></app-profile-feed>
+      <span class="fullname">Profile</span>
+      <span class="subtitle">{{current}}/{{numItems}}</span>
     </div>
-    <span fxFlex></span>
   </div>
-  
+
+  <div fxLayout="row">
+    <app-profile-feed (changed)="setCurrent($event)" [feed]="favorites" [current]="current"></app-profile-feed>
+    <profile-cards fxFlex [feed]="favorites" [current]="current" [numItems]="numItems"></profile-cards>
+  </div>
 </div>

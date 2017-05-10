@@ -7,6 +7,11 @@
     padding: 20px;
 }
 
+.subtitle {
+    font-size: 13pt;
+    color: #800000;
+}
+
 .fullname {
     font-size: 17pt;
     color: black;
@@ -16,4 +21,29 @@
 .username {
     font-size: 13pt;
     color: #800000;
+}
+
+.sculpt {
+    z-index: 3;
+    box-shadow: 2px 1px 6px #7F7F7F;
+    max-width: 30%;
+    max-height: auto;
+    align-content: center;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}   
+
+#userinfo {
+    color: #800000;
+    font-family: 'Lucida Grande';
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 3px 4px #888888;
+    padding: 20px;
+    z-index: 2;
+}
+.tabs {
+    z-index: 1;
+    margin-top: -1px;
 }

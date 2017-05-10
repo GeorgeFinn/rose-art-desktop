@@ -1,0 +1,5 @@
+<div fxLayout="column" class="album">
+    <div *ngFor="let art of feed; let i = index">
+        <photo-card [art]="art" class="full-card" [ngClass]="{active : isCurrent(i)}" [folder]="folder" [numItems]="numItems" [index]="i+1"></photo-card>
+    </div>
+</div>
