@@ -1,7 +1,7 @@
 import { HallsComponent } from './halls/halls.component';
 import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
-import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
+import { MobileInfoComponent } from './-main-content/mobile-info/mobile-info.component';
 import { AboutComponent } from './+about/about.component';
 import { SculpturesComponent } from './-main-content/sculptures/sculptures.component';
 import { HallCompComponent } from './-main-content/hall-comp/hall-comp.component';
@@ -52,6 +52,10 @@ export const routes: Routes = [
         path: 'art-detail/:name',
         component: ArtDetailComponent
       },
+      {
+        path: 'mobile',
+        component: MobileInfoComponent,
+      }
     ]
   },
   {
@@ -61,11 +65,6 @@ export const routes: Routes = [
   {
     path: 'about',
     component: AboutComponent,
-    canActivate: [AuthGuardService],
-  },
-  {
-    path: 'mobile',
-    component: MobileInfoComponent,
     canActivate: [AuthGuardService],
   },
   {
