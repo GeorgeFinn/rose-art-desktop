@@ -36,7 +36,7 @@ import { AngularFireDatabaseModule, AngularFireDatabase, FirebaseListObservable 
 import { SigninComponent } from './+signin/signin.component';
 import * as firebase from 'firebase/app';
 import { AboutComponent } from './+about/about.component';
-import { MobileInfoComponent } from './+mobile-info/mobile-info.component';
+import { MobileInfoComponent } from './-main-content/mobile-info/mobile-info.component';
 import { HallsComponent } from './halls/halls.component';
 import { PhotoCardComponent } from "app/-main-content/profile/profile-cards/photo-card/photo-card.component";
 import { PhotoCardSimplifiedComponent } from "app/-main-content/profile/profile-feed/photo-card-simplified/photo-card-simplified.component";
