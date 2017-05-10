@@ -1,8 +1,7 @@
-import { SlideShowImageComponent } from './slide-show/slide-show-image/slide-show-image.component';
+import { SlideShowCardsComponent } from './slide-show/slide-show-cards/slide-show-cards.component';
+import { ArtCardComponent } from './slide-show/art-card/art-card.component';
 import { SlideShowPreviewComponent } from './slide-show/slide-show-preview/slide-show-preview.component';
 import { SlideShowPreviewsComponent } from './slide-show/slide-show-previews/slide-show-previews.component';
-import { SlideShowImagesComponent } from './slide-show/slide-show-images/slide-show-images.component';
-import { SlideShowControlComponent } from './slide-show/slide-show-control/slide-show-control.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
 import { ProfileFabComponent } from './-navigation/profile-fab/profile-fab.component';
 import { SculpturesComponent } from './-main-content/sculptures/sculptures.component';
@@ -13,7 +12,6 @@ import { ArtDetailComponent } from './-main-content/art-detail/art-detail.compon
 import { PhotoCardComponent } from './photo-card/photo-card.component';
 import { LeftBurgerComponent } from './-navigation/left-burger/left-burger.component';
 import { DirectoryComponent } from './-navigation/directory/directory.component';
-import { SculptureCardComponent } from './-main-content/sculptures/sculpture-card/sculpture-card.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
 import { HallCompComponent } from './-main-content/hall-comp/hall-comp.component';
 import { LandingScreenComponent } from './-main-content/landing-screen/landing-screen.component';
@@ -57,7 +55,7 @@ import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card
     ProfileComponent,
     ProfileFeedComponent,
     SculpturesComponent,
-    SculptureCardComponent,
+    ArtCardComponent,
     DirectoryComponent,
     LeftBurgerComponent,
     ProfileComponent,
@@ -68,11 +66,9 @@ import { PhotoCardSimplifiedComponent } from './photo-card-simplified/photo-card
     HallsComponent,
     PhotoCardSimplifiedComponent,
      SlideShowComponent,
-    SlideShowControlComponent,
-    SlideShowImagesComponent,
+    SlideShowCardsComponent,
     SlideShowPreviewsComponent,
     SlideShowPreviewComponent,
-    SlideShowImageComponent,
   ],
   imports: [
     BrowserModule,

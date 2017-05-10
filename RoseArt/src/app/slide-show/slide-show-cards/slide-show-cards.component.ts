@@ -1,12 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'slide-show-images',
-  templateUrl: './slide-show-images.component.html',
+  selector: 'slide-show-cards',
+  templateUrl: './slide-show-cards.component.html',
   styleUrls: ['../slide-show.component.scss']
 })
-export class SlideShowImagesComponent implements OnInit {
+export class SlideShowCardsComponent implements OnInit {
 
+    @Input() public numItems;
+    @Input() public folder;
     @Input() public current;
     @Input() public gallery;
     constructor (){

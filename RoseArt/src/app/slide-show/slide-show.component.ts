@@ -8,10 +8,10 @@ import { Art } from "app/art.model";
 })
 export class SlideShowComponent implements OnInit, OnDestroy {
 
-    @Input() arts: Array<Art> = [];
-    public current:number = 1;
-    public max: number = 8;
-    public gallery:Array<Art> = [];
+    @Input() folder: string = "";
+    @Input() artPieces: Array<Art> = [];
+    public current: number = 1;
+    public numItems: number = 8;
     private interval: any;
     
     constructor(){}
@@ -26,7 +26,7 @@ export class SlideShowComponent implements OnInit, OnDestroy {
 
     startTimer(): void {
         this.interval = setInterval(() => {
-            if(this.current >= (this.max - 1)) {
+            if(this.current >= (this.numItems - 1)) {
                 this.current = 1;
             } else {
                 this.current += 1;

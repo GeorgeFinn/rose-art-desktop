@@ -20,18 +20,17 @@ export class SculpturesComponent implements OnInit {
   }
 
    populate(): void {
-        var nameOfPicFolder = '../../assets/images/sculptures';
-        var noOfPics = 7;
-        var counter = 1;
-        var tempArt: Art;
-        while (counter <= noOfPics) {
-            tempArt = new Art();
-            tempArt.author = 'author: ' + counter;
-            tempArt.title = 'title: ' + counter;
-            tempArt.url = nameOfPicFolder + '/art' + counter + '.jpg';
-            this.sculptures.push(tempArt);
-            counter++;
-        }
+    var nameOfPicFolder = '../../assets/images/sculptures';
+    var noOfPics = 7;
+    var counter = 1;
+    var tempArt: Art;
+    while (counter <= noOfPics) {
+        tempArt = new Art();
+        tempArt.author = 'author: ' + counter;
+        tempArt.title = 'title: ' + counter;
+        tempArt.url = nameOfPicFolder + '/art' + counter + '.jpg';
+        this.sculptures.push(tempArt);
+        counter++;
+      }
     }
-
-}
+  }

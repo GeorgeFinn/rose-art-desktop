@@ -1,6 +1,6 @@
 <div fxLayout="column" class="album">
     <div *ngFor="let art of gallery; let i = index">
-        <app-sculpture-card [art]="art" class="full-card" [ngClass]="{active : isCurrent(i)}"></app-sculpture-card>
+        <art-card [art]="art" class="full-card" [ngClass]="{active : isCurrent(i)}" [folder]="folder" [numItems]="numItems" [index]="i+1"></art-card>
         <!--<slide-show-image [art]="art" class="full-image" [ngClass]="{active : isCurrent(i)}"></slide-show-image>-->
     </div>
 </div>
