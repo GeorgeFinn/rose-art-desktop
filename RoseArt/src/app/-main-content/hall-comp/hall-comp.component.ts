@@ -23,14 +23,14 @@ export class HallCompComponent implements OnInit {
 
    populate(): void {
     var nameOfPicFolder = '../../assets/images/' + this.hallName;
-    var noOfPics = 7;
+    var noOfPics = 2;
     var counter = 1;
     var tempArt: Art;
     while (counter <= noOfPics) {
         tempArt = new Art();
         tempArt.author = 'author: ' + counter;
         tempArt.title = 'title: ' + counter;
-        tempArt.url = nameOfPicFolder + '/pic' + counter + '.jpg';
+        tempArt.url = nameOfPicFolder + '/painting' + counter + '.png';
         this.pieces.push(tempArt);
         counter++;
     }

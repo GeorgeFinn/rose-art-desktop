@@ -16,5 +16,4 @@ export class ArtCardComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

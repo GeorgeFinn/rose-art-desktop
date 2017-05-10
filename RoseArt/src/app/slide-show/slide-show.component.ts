@@ -11,12 +11,13 @@ export class SlideShowComponent implements OnInit, OnDestroy {
     @Input() folder: string = "";
     @Input() artPieces: Array<Art> = [];
     public current: number = 1;
-    public numItems: number = 8;
+    public numItems: number;
     private interval: any;
     
     constructor(){}
 
     ngOnInit(): void {
+        this.numItems = this.artPieces.length;
         this.startTimer();
     }
 
@@ -26,7 +27,7 @@ export class SlideShowComponent implements OnInit, OnDestroy {
 
     startTimer(): void {
         this.interval = setInterval(() => {
-            if(this.current >= (this.numItems - 1)) {
+            if(this.current >= this.numItems) {
                 this.current = 1;
             } else {
                 this.current += 1;
