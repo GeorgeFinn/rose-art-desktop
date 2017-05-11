@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
 import { Art } from "app/art.model";
+import { FirebaseListObservable } from "angularfire2/database";
 
 @Component({
   selector: 'slide-show',
@@ -10,15 +11,14 @@ export class SlideShowComponent implements OnInit, OnDestroy {
 
     @Input() previews: boolean = true;
     @Input() folder: string = "";
-    @Input() artPieces: Array<Art> = [];
+    @Input() artPieces: FirebaseListObservable<Art[]>;
+    @Input() numItems: number;
     public current: number = 1;
-    public numItems: number;
     private interval: any;
     
     constructor(){}
 
     ngOnInit(): void {
-        this.numItems = this.artPieces.length;
         this.startTimer();
     }
 
