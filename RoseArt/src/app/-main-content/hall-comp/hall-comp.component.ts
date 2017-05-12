@@ -9,7 +9,7 @@ import { Subscription } from "rxjs";
   templateUrl: './hall-comp.component.html',
   styleUrls: ['./hall-comp.component.css']
 })
-export class HallCompComponent implements OnDestroy {
+export class HallCompComponent implements OnInit, OnDestroy {
 
   public hallName: string;
   // public pieces:Array<Art> = [];
@@ -19,16 +19,16 @@ export class HallCompComponent implements OnDestroy {
   constructor(
     private af: AngularFireDatabase,
     private route: ActivatedRoute) {
-    
-    // Router params DO NOT NEED to unsubscribe later
-    this.routerSubscription = this.route.params.subscribe( (params: Params) => {
-      this.hallName  = params["name"];
-    });
+   }
 
-    var location = '/' + this.hallName;
-    this.pieces = af.list(location);
+   ngOnInit(): void {
+      // Router params DO NOT NEED to unsubscribe later
+      this.routerSubscription = this.route.params.subscribe( (params: Params) => {
+        this.hallName  = params["name"];
+      });
 
-    console.log(location);
+      var location = '/' + this.hallName;
+      this.pieces = this.af.list(location);
    }
 
   ngOnDestroy(): void {

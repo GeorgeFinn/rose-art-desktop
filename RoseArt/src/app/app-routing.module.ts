@@ -1,5 +1,4 @@
-import { HallsComponent } from './halls/halls.component';
-import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
+import { HallsComponent } from './-main-content/halls/halls.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
 import { MobileInfoComponent } from './-main-content/mobile-info/mobile-info.component';
 import { AboutComponent } from './+about/about.component';
@@ -47,10 +46,6 @@ export const routes: Routes = [
       {
         path: 'sculptures',
         component: SculpturesComponent
-      },
-      {
-        path: 'art-detail/:name',
-        component: ArtDetailComponent
       },
       {
         path: 'mobile',

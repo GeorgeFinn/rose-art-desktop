@@ -18,18 +18,15 @@ export class AuthService {
       //Subscribe to AuthState
       this.afAuth.authState.subscribe( (authState) => {
         if (authState) {
-          console.log("AuthService: User is signed in");
-          console.log("AuthService: authState: ", authState);
           //Userservice.updateUser
         } else {
-          console.log("AuthService: User is NOT signed in");
+          // console.log("AuthService: User is NOT signed in");
         }
       });
     }
 
     get isSignedInStream(): Observable<boolean> {
       return this.afAuth.authState.map<firebase.User, boolean>( (authState) => {
-        console.log(this.afAuth.authState);
         // return authState != null;
         return true;
       });

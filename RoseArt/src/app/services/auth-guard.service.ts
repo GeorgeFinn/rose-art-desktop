@@ -10,7 +10,6 @@ export class AuthGuardService implements CanActivate {
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> | Promise<boolean> {
       return this.authService.isSignedInStream.map<boolean, boolean>((isSignedInStream: boolean) => {
-        console.log("Auth Guard: isSignedIn: ", isSignedInStream);
         if(!isSignedInStream) {
           this.router.navigate(['/signin']);
         }

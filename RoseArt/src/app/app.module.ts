@@ -8,7 +8,6 @@ import { SculpturesComponent } from './-main-content/sculptures/sculptures.compo
 import { TopBarComponent } from './-bars/top-bar/top-bar.component';
 import { BottomBarComponent } from './-bars/bottom-bar/bottom-bar.component';
 import { ProfileFeedComponent } from './-main-content/profile/profile-feed/profile-feed.component';
-import { ArtDetailComponent } from './-main-content/art-detail/art-detail.component';
 import { LeftBurgerComponent } from './-navigation/left-burger/left-burger.component';
 import { DirectoryComponent } from './-navigation/directory/directory.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
@@ -37,10 +36,10 @@ import { SigninComponent } from './+signin/signin.component';
 import * as firebase from 'firebase/app';
 import { AboutComponent } from './+about/about.component';
 import { MobileInfoComponent } from './-main-content/mobile-info/mobile-info.component';
-import { HallsComponent } from './halls/halls.component';
 import { PhotoCardComponent } from "app/-main-content/profile/profile-cards/photo-card/photo-card.component";
 import { PhotoCardSimplifiedComponent } from "app/-main-content/profile/profile-feed/photo-card-simplified/photo-card-simplified.component";
 import { ProfileCardsComponent } from "app/-main-content/profile/profile-cards/profile-cards.component";
+import { HallsComponent } from "app/-main-content/halls/halls.component";
 
 
 @NgModule({
@@ -61,16 +60,15 @@ import { ProfileCardsComponent } from "app/-main-content/profile/profile-cards/p
     LeftBurgerComponent,
     ProfileComponent,
     PhotoCardComponent,
-    ArtDetailComponent,
     AboutComponent,
     MobileInfoComponent,
-    HallsComponent,
     PhotoCardSimplifiedComponent,
     SlideShowComponent,
     SlideShowCardsComponent,
     SlideShowPreviewsComponent,
     SlideShowPreviewComponent,
     ProfileCardsComponent,
+    HallsComponent
   ],
   imports: [
     BrowserModule,

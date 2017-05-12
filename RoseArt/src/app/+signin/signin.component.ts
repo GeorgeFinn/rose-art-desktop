@@ -22,7 +22,6 @@ import { trigger, keyframes, animate, transition, style, NgZone} from '@angular/
 export class SigninComponent implements OnInit {
   public wobbleState: string;
  
-  
   constructor(public authService: AuthService, public zone: NgZone) { }
 
   ngOnInit() {
