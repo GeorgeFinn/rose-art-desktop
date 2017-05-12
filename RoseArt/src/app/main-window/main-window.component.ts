@@ -18,24 +18,16 @@ export class MainWindowComponent implements OnInit {
   }
 
   toggleLeft() {
-    console.log("toggled left");
     this.showDirectory = !this.showDirectory;
-    console.log(this.showDirectory);
   }
 
   toggleRight() {
-     console.log("toggled right");
-     this.showLanding = false;
+    this.showLanding = false;
      this.showProfile = !this.showProfile;
-    console.log(this.showProfile);
   }
 
   showRight() {
     return !(this.showDirectory || this.showProfile);
-  }
-
-  signOut() {
-    console.log("signing out");
   }
 
 }

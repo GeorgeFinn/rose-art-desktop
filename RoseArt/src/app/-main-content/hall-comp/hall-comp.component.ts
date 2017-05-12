@@ -27,6 +27,8 @@ export class HallCompComponent implements OnDestroy {
 
     var location = '/' + this.hallName;
     this.pieces = af.list(location);
+
+    console.log(location);
    }
 
   ngOnDestroy(): void {
