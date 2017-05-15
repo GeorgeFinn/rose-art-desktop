@@ -6,7 +6,7 @@
     <defs>
         <style type="text/css">
             @font-face {
-                font-family: 'Selima';
+                font-family: 'selima';
                 src: url('./fonts/selima.ttf');
             }
         </style>
