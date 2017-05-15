@@ -1,7 +1,7 @@
+import { Router } from '@angular/router';
 import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { trigger, keyframes, animate, transition, style, NgZone} from '@angular/core';
-
 
 @Component({
   selector: 'app-signin',
@@ -22,7 +22,7 @@ import { trigger, keyframes, animate, transition, style, NgZone} from '@angular/
 export class SigninComponent implements OnInit {
   public wobbleState: string;
  
-  constructor(public authService: AuthService, public zone: NgZone) { }
+  constructor(public authService: AuthService, public zone: NgZone, public router : Router) { }
 
   ngOnInit() {
   }

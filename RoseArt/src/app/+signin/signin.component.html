@@ -1,13 +1,39 @@
 <div id="signin" fxFlex fxLayoutAlign="center none" fxLayout="column">
     <div fxLayout="row">
-        <span fxFlex></span>
-        <div (pointer)="'cursor'"(mouseenter)='triggerAnimation()' id="signinButton" md-button (click)="authService.signInWithRosefire()">
-            <img [@wobble]="wobbleState" (@wobble.done)="reset()" src="../assets/images/flame-logo.png" alt="rose-art-flame-logo">
-        </div>    
-        <span fxFlex></span>      
+            <span fxFlex></span>
+            <div (pointer)="'cursor'"(mouseenter)='triggerAnimation()' id="signinButton" md-button (click)="authService.signInWithRosefire()">
+                <img [@wobble]="wobbleState" (@wobble.done)="reset()" src="../assets/images/flame-logo.png" alt="rose-art-flame-logo">
+            </div>    
+            <span fxFlex></span>      
     </div>
     <div class="footer" fxLayout="row">
         <span fxFlex> </span>
         <img src="../assets/images/signatures.png" alt="signatures">
     </div>
 </div>
+
+<!--<div fxLayoutAlign="center none">
+    <div id="signin" *ngIf="!(authService.isSignedInStream | async);else alreadySignedInTemplate" fxFlex fxLayout="column">
+        <div fxLayout="row">
+                <span fxFlex></span>
+                <div (pointer)="'cursor'"(mouseenter)='triggerAnimation()' id="signinButton" md-button (click)="authService.signInWithRosefire()">
+                    <img [@wobble]="wobbleState" (@wobble.done)="reset()" src="../assets/images/flame-logo.png" alt="rose-art-flame-logo">
+                </div>    
+                <span fxFlex></span>      
+        </div>
+        <div class="footer" fxLayout="row">
+            <span fxFlex> </span>
+            <img src="../assets/images/signatures.png" alt="signatures">
+        </div>
+    </div>
+    
+    <template #alreadySignedInTemplate>
+        <md-card fxLayout="column" fxLayoutAlign="none center">
+            <md-card-title>
+            Signed in as {{ authService.displayNameStream | async }}
+            </md-card-title>
+            <button md-raised-button [routerLink]="['/main','landing']">Home</button>
+            <button md-raised-button (click)="authService.signOut()">Sign Out</button>
+        </md-card>
+    </template>
+</div>-->
