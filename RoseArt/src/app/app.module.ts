@@ -75,7 +75,7 @@ import { HallsComponent } from "app/-main-content/halls/halls.component";
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule

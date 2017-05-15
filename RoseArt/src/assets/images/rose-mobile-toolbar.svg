@@ -3,7 +3,14 @@
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
     <title>rose-art-toolbar</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <style type="text/css">
+            @font-face {
+                font-family: 'Selima';
+                src: url('./fonts/selima.ttf');
+            }
+        </style>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard-2" transform="translate(-686.000000, -25.000000)">
             <g id="rose-art-toolbar" transform="translate(665.000000, 25.000000)">
