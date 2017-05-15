@@ -1,3 +1,4 @@
+import { AuthService } from './../../services/auth.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Art } from "app/art.model";
 
@@ -13,7 +14,8 @@ export class ProfileComponent implements OnInit, OnDestroy {
   public numItems: number;
   private interval: any;
 
-  constructor() {
+  constructor(public auth: AuthService) {
+    console.log(this.auth.username);
    }
 
   ngOnInit() {

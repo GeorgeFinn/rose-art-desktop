@@ -56,15 +56,15 @@ export const routes: Routes = [
   {
     path: 'signin',
     component: SigninComponent,
+    canActivate: [AuthGuardService],
   },
   {
     path: 'about',
     component: AboutComponent,
-    canActivate: [AuthGuardService],
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'main',
     pathMatch: 'full'
   },
 ];

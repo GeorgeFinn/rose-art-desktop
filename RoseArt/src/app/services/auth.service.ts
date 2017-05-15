@@ -10,6 +10,7 @@ import * as firebase from 'firebase/app';
 export class AuthService {
 
   private user: Observable<firebase.User>;
+  public username: string;
 
   constructor(
     private afAuth: AngularFireAuth,
@@ -18,6 +19,7 @@ export class AuthService {
       //Subscribe to AuthState
       this.afAuth.authState.subscribe( (authState) => {
         if (authState) {
+          this.username = authState.uid;
           //Userservice.updateUser
         } else {
           // console.log("AuthService: User is NOT signed in");
@@ -27,8 +29,8 @@ export class AuthService {
 
     get isSignedInStream(): Observable<boolean> {
       return this.afAuth.authState.map<firebase.User, boolean>( (authState) => {
-        // return authState != null;
-        return true;
+        return authState != null;
+        // return true;
       });
     }
 
