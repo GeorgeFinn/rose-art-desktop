@@ -4,7 +4,7 @@ import { trigger, keyframes, animate, transition, style, NgZone, state } from '@
 @Component({
   selector: 'app-directory',
   templateUrl: './directory.component.html',
-  styleUrls: ['./directory.component.css'],
+  styleUrls: ['./directory.component.scss'],
   animations: [
     trigger('wobble', [
       transition('inactive => active', animate(1000, keyframes([

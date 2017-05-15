@@ -1,6 +1,3 @@
-.hall-button {
-    margin-left: 50px;
-}
 #close {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -9,21 +6,33 @@
     font-size: 40px;
     cursor: pointer;
 }
-#directory-list {
-    text-align: center;
-}
-md-list-item:hover {
-    background-color: #591B1B;
-    color: #CBCACB;
-}
-md-list-item:hover h4  {
-    animation: enlarge .6s forwards;
-    -webkit-animation: enlarge .6s forwards;
-    z-index:8;
-}
 
-md-list-item {
-    cursor: pointer;
+#directory-list {
+  text-align: center;
+
+  md-list-item:hover {
+  background-color: #591B1B;
+
+    h4 {
+      animation: enlarge .6s forwards;
+      -webkit-animation: enlarge .6s forwards;
+      z-index:8;
+    }
+  }
+  md-list-item {
+      cursor: pointer;
+
+      h4 {
+        color: #CBCACB;
+      }
+
+      md-icon {
+        color: #CBCACB;
+      }
+  }
+  .hall-button {
+    margin-left: 50px;
+  }
 }
 
 @keyframes wobble {

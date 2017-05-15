@@ -1,7 +1,6 @@
 import { HallsComponent } from './-main-content/halls/halls.component';
 import { ProfileComponent } from './-main-content/profile/profile.component';
 import { MobileInfoComponent } from './-main-content/mobile-info/mobile-info.component';
-import { AboutComponent } from './+about/about.component';
 import { SculpturesComponent } from './-main-content/sculptures/sculptures.component';
 import { HallCompComponent } from './-main-content/hall-comp/hall-comp.component';
 import { MainWindowComponent } from './main-window/main-window.component';
@@ -56,11 +55,6 @@ export const routes: Routes = [
   {
     path: 'signin',
     component: SigninComponent,
-    canActivate: [AuthGuardService],
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
   },
   {
     path: '**',
