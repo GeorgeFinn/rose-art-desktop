@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+	font-family: "Selima";
+	src: url("assets/fonts/selima.ttf") format("truetype"),
+}
 
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 html, body, material-app, md-sidenav-container {
     margin: 0;
     width: 100%;
